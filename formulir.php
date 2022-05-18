@@ -588,9 +588,9 @@
     }
     //fungsi untuk melakukan cek data yang diinput
     function cek_input($data) {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
+        $data = trim($data); //menghapus spasi di awal dan akhir 
+        $data = stripslashes($data); //menghilangkan tanda backlashes
+        $data = htmlspecialchars($data); //mengubah beberapa character yang sudah ditentukan menjadi entitas HTML
         return $data;
     }
 
@@ -1057,7 +1057,7 @@
     </div>
     </div>
     </div>
-    
+
 
     <div class="row">
         <div class="col-md-6">
@@ -1190,21 +1190,6 @@
     </div>
     </div>
 
-<?php
-echo "<h2> Your input:</h2>";
-echo "Jenis pendaftaran = ".$jenisp;
-echo "</br>"; 
-echo "Tanggal masuk sekolah = ".$tanggal;
-echo "</br>";
-echo "NIS = ".$nis;
-echo "</br>";
-echo "NPU = ".$npu;
-echo "</br>";
-echo "SKHUN = ".$skhun;
-echo "</br>";
-echo "Nomor ijazah = ".$ijazah;
-
-?>
 
 
 
